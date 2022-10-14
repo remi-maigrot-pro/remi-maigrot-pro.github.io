@@ -11,3 +11,11 @@
         document.body.classList.toggle("light-mode");
     })
 })();
+
+function sendEmail() {
+    const email_to = "remi.maigrot10@gmail.com"
+    const subject = document.getElementById('subject_id').value;
+    const body = document.getElementById('body_id').value;
+    const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${email_to}&su=${subject}&body=${body}`;
+	window.open(url);
+}
